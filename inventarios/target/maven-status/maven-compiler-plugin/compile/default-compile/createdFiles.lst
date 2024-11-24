@@ -1,0 +1,14 @@
+com\krakedev\inventario\entidades\CategoriaUDM.class
+com\krakedev\inventarios\bdd\TipoDocumentoBDD.class
+com\krakedev\inventarios\bdd\ProveedoresBDD.class
+com\krakedev\inventarios\bdd\ProductosBDD.class
+com\krakedev\inventarios\utils\ConexionBDD.class
+com\krakedev\inventario\entidades\Categoria.class
+com\krakedev\inventario\entidades\TipoDocumento.class
+com\krakedev\inventarios\excepciones\KrakeDevException.class
+com\krakedev\inventarios\servicios\ServiciosProveedores.class
+com\krakedev\inventario\entidades\Producto.class
+com\krakedev\inventarios\servicios\ServiciosTipoDocumento.class
+com\krakedev\inventarios\servicios\ServiciosProductos.class
+com\krakedev\inventario\entidades\UnidadDeMedida.class
+com\krakedev\inventario\entidades\Proveedor.class
