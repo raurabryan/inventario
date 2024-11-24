@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 import com.krakedev.inventario.entidades.Categoria;
 import com.krakedev.inventario.entidades.Producto;
-
+import com.krakedev.inventario.entidades.Proveedor;
 import com.krakedev.inventario.entidades.UnidadDeMedida;
 import com.krakedev.inventarios.excepciones.KrakeDevException;
 import com.krakedev.inventarios.utils.ConexionBDD;
@@ -74,4 +74,32 @@ public class ProductosBDD {
 		}
 		return productos;
 	}
+	
+	public void insertar (Producto producto ) throws KrakeDevException{
+		Connection con = null;
+		PreparedStatement ps = null;
+		try {
+			con = ConexionBDD.obtenerConexion();
+			ps = con.prepareStatement("insert into producto (" +
+		            "codigo_pk, nombre, udm_fk, categoria_fk, precio_venta, tiene_iva, coste, stock" +
+		            ") values (?, ?, ?, ?, ?, ?, ?, ?)");
+			 ps.setInt(1, producto.getCodigo());
+		        ps.setString(2, producto.getNombre()); 
+		        ps.setString(3, producto.getUnidadMedida().getNombre()); 
+		        ps.setInt(4, producto.getCategoria().getCodigo()); 
+		        ps.setBigDecimal(5, producto.getPrecioVenta());
+		        ps.setBoolean(6, producto.isTieneIva()); 
+		        ps.setBigDecimal(7, producto.getCoste()); 
+		        ps.setInt(8, producto.getStock()); 
+		        
+		        ps.executeUpdate();
+			
+		}catch (KrakeDevException e) {
+			e.printStackTrace();
+		}catch (SQLException e) {
+			e.printStackTrace();
+			throw new KrakeDevException("Error al insertar proveedores. Detalle"+e.getErrorCode());
+		}
+	}
+	
 }
