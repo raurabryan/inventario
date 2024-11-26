@@ -65,7 +65,7 @@ public class PedidosBDD {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
-			throw new KrakeDevException("Error al insertar proveedores. Detalle" + e.getErrorCode());
+			throw new KrakeDevException("Error al insertar proveedores. Detalle" + e.getErrorCode(), e);
 		}
 	}
 
@@ -116,7 +116,7 @@ public class PedidosBDD {
 			throw e;
 		} catch (SQLException e) {
 			e.printStackTrace();
-			throw new KrakeDevException("Error al actualizar el pedido. Detalle: " + e.getErrorCode());
+			throw new KrakeDevException("Error al actualizar el pedido. Detalle: " + e.getErrorCode(), e);
 		}
 	}
 

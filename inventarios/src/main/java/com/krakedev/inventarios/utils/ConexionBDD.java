@@ -1,6 +1,7 @@
 package com.krakedev.inventarios.utils;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import javax.naming.Context;
@@ -27,5 +28,10 @@ public class ConexionBDD {
 			throw new KrakeDevException("Error de conexion");
 		} 
 		return con;
+	}
+
+	public static void cerrarConexion(Connection con, PreparedStatement ps, Object object) {
+		// TODO Auto-generated method stub
+		
 	}
 }
