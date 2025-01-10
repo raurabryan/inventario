@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:00:30:18 -0500] "PUT /ejemploweb/rest/customers/act HTTP/1.1" 500 719
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:00:34:29 -0500] "PUT /ejemploweb/rest/customers/act HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:10:42:15 -0500] "GET /ejemploweb/rest/customers/all HTTP/1.1" 200 168
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:11:13:07 -0500] "GET /ejemploweb/rest/customers/buscarPorCedula/1724835671 HTTP/1.1" 404 641
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:11:13:56 -0500] "GET /ejemploweb/rest/customers/buscarPorCedula/1724835671 HTTP/1.1" 404 641
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:11:16:39 -0500] "GET /ejemploweb/rest/customers/all HTTP/1.1" 200 168
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:11:16:54 -0500] "GET /ejemploweb/rest/customers/buscarPorCedula/1724835671 HTTP/1.1" 404 641
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:11:17:38 -0500] "GET /ejemploweb/rest/customers/buscarPorCedula/1724835671 HTTP/1.1" 404 641
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:11:18:39 -0500] "GET /ejemploweb/rest/customers/buscarPorCedula/1724835671 HTTP/1.1" 404 641
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:11:19:26 -0500] "GET /ejemploweb/rest/customers/buscarPorCedula/1724835665 HTTP/1.1" 404 641
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:11:21:14 -0500] "GET /ejemploweb/rest/customers/buscarPorCedula/1724835665 HTTP/1.1" 404 641
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:11:26:32 -0500] "GET /ejemploweb/rest/customers/buscarPorCedula/1724835671 HTTP/1.1" 200 55
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:11:36:04 -0500] "GET /ejemploweb/rest/customers/buscarPorNumeroHijos/2 HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [21/Oct/2024:11:40:51 -0500] "GET /ejemploweb/rest/customers/buscarPorNumeroHijos/2 HTTP/1.1" 200 112

@@ -1,0 +1,485 @@
+-- Creación de la base de datos
+create database sistema_buses;
+use sistema_buses;
+
+-- Tabla de buses
+create table buses (
+    id_bus int auto_increment primary key,
+    numero_bus varchar(10) not null,
+    capacidad int not null
+);
+
+-- Tabla de usuarios
+create table usuarios (
+    id_usuario int auto_increment primary key,
+    nombre varchar(100) not null,
+    correo_electronico varchar(100) unique not null
+);
+
+-- Tabla de rutas
+create table rutas (
+    id_ruta int auto_increment primary key,
+    ciudad_origen varchar(100) not null,
+    ciudad_destino varchar(100) not null,
+    horario_salida time not null,
+    horario_llegada time not null
+);
+
+-- Tabla de reservas
+create table reservas (
+    id_reserva int auto_increment primary key,
+    id_usuario int,
+    id_ruta int,
+    fecha_reserva date not null,
+    foreign key (id_usuario) references usuarios(id_usuario),
+    foreign key (id_ruta) references rutas(id_ruta)
+);
+
+-- Inserción de datos en la tabla de buses
+insert into buses (numero_bus, capacidad) values
+('B001', 40),
+('B002', 45),
+('B003', 50),
+('B004', 38),
+('B005', 42);
+
+-- Inserción de datos en la tabla de usuarios
+insert into usuarios (nombre, correo_electronico) values
+('juan perez', 'juanperez@gmail.com'),
+('maria lopez', 'marialopez@yahoo.com'),
+('carlos gomez', 'carlosg@hotmail.com'),
+('ana martinez', 'anamartinez@gmail.com'),
+('pedro ruiz', 'pedroruiz@outlook.com');
+
+-- Inserción de datos en la tabla de rutas
+insert into rutas (ciudad_origen, ciudad_destino, horario_salida, horario_llegada) values
+('lima', 'arequipa', '08:00:00', '14:00:00'),
+('trujillo', 'chiclayo', '09:30:00', '12:00:00'),
+('cusco', 'puno', '07:00:00', '11:30:00'),
+('piura', 'tumbes', '10:00:00', '13:45:00'),
+('ica', 'nazca', '06:45:00', '09:15:00');
+
+-- Inserción de datos en la tabla de reservas
+insert into reservas (id_usuario, id_ruta, fecha_reserva) values
+(1, 3, '2025-01-06'),
+(2, 1, '2025-01-07'),
+(3, 2, '2025-01-08'),
+(4, 5, '2025-01-09'),
+(5, 4, '2025-01-10');
+
+
+
+//////////////////////
+package com.krakedev.buses.servicios;
+
+import java.util.ArrayList;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import com.krakedev.buses.bdd.BusesBDD;
+import com.krakedev.buses.bdd.RutasBDD;
+import com.krakedev.buses.entidades.Bus;
+import com.krakedev.buses.entidades.Ruta;
+import com.krakedev.buses.excepciones.KrakeDevException;
+
+@Path("buses")
+public class ServicioBuses {
+
+    @GET
+    @Path("listar")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response listarBuses() {
+        BusesBDD busesBDD = new BusesBDD();
+        ArrayList<Bus> listaBuses;
+        try {
+            listaBuses = busesBDD.obtenerTodos();
+            return Response.ok(listaBuses).build();
+        } catch (KrakeDevException e) {
+            e.printStackTrace();
+            return Response.serverError().entity(e.getMessage()).build();
+        }
+    }
+}
+
+@Path("rutas")
+public class ServicioRutas {
+
+    @GET
+    @Path("listar")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response listarRutas() {
+        RutasBDD rutasBDD = new RutasBDD();
+        ArrayList<Ruta> listaRutas;
+        try {
+            listaRutas = rutasBDD.obtenerTodas();
+            return Response.ok(listaRutas).build();
+        } catch (KrakeDevException e) {
+            e.printStackTrace();
+            return Response.serverError().entity(e.getMessage()).build();
+        }
+    }
+}
+
+// Clase BusesBDD para acceder a la base de datos y obtener todos los buses
+package com.krakedev.buses.bdd;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import com.krakedev.buses.entidades.Bus;
+import com.krakedev.buses.excepciones.KrakeDevException;
+import com.krakedev.utils.ConexionBDD;
+
+public class BusesBDD {
+    public ArrayList<Bus> obtenerTodos() throws KrakeDevException {
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        ArrayList<Bus> listaBuses = new ArrayList<>();
+        try {
+            con = ConexionBDD.obtenerConexion();
+            ps = con.prepareStatement("select * from buses");
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Bus bus = new Bus(rs.getInt("id_bus"), rs.getString("numero_bus"), rs.getInt("capacidad"));
+                listaBuses.add(bus);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new KrakeDevException("Error al obtener los buses: " + e.getMessage(), e);
+        } finally {
+            ConexionBDD.cerrarConexion(con);
+        }
+        return listaBuses;
+    }
+}
+
+// Clase RutasBDD para acceder a la base de datos y obtener todas las rutas
+package com.krakedev.buses.bdd;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import com.krakedev.buses.entidades.Ruta;
+import com.krakedev.buses.excepciones.KrakeDevException;
+import com.krakedev.utils.ConexionBDD;
+
+public class RutasBDD {
+    public ArrayList<Ruta> obtenerTodas() throws KrakeDevException {
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        ArrayList<Ruta> listaRutas = new ArrayList<>();
+        try {
+            con = ConexionBDD.obtenerConexion();
+            ps = con.prepareStatement("select * from rutas");
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Ruta ruta = new Ruta(rs.getInt("id_ruta"), rs.getString("ciudad_origen"), rs.getString("ciudad_destino"), rs.getTime("horario_salida"), rs.getTime("horario_llegada"));
+                listaRutas.add(ruta);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new KrakeDevException("Error al obtener las rutas: " + e.getMessage(), e);
+        } finally {
+            ConexionBDD.cerrarConexion(con);
+        }
+        return listaRutas;
+    }
+}
+
+// Entidad Bus
+package com.krakedev.buses.entidades;
+
+public class Bus {
+    private int id;
+    private String numeroBus;
+    private int capacidad;
+
+    public Bus(int id, String numeroBus, int capacidad) {
+        this.id = id;
+        this.numeroBus = numeroBus;
+        this.capacidad = capacidad;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNumeroBus() {
+        return numeroBus;
+    }
+
+    public int getCapacidad() {
+        return capacidad;
+    }
+}
+
+// Entidad Ruta
+package com.krakedev.buses.entidades;
+
+import java.sql.Time;
+
+public class Ruta {
+    private int id;
+    private String ciudadOrigen;
+    private String ciudadDestino;
+    private Time horarioSalida;
+    private Time horarioLlegada;
+
+    public Ruta(int id, String ciudadOrigen, String ciudadDestino, Time horarioSalida, Time horarioLlegada) {
+        this.id = id;
+        this.ciudadOrigen = ciudadOrigen;
+        this.ciudadDestino = ciudadDestino;
+        this.horarioSalida = horarioSalida;
+        this.horarioLlegada = horarioLlegada;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getCiudadOrigen() {
+        return ciudadOrigen;
+    }
+
+    public String getCiudadDestino() {
+        return ciudadDestino;
+    }
+
+    public Time getHorarioSalida() {
+        return horarioSalida;
+    }
+
+    public Time getHorarioLlegada() {
+        return horarioLlegada;
+    }
+}
+/////////////////////////////
+
+
+package com.krakedev.buses.servicios;
+
+import java.util.ArrayList;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import com.krakedev.buses.bdd.BusesBDD;
+import com.krakedev.buses.bdd.RutasBDD;
+import com.krakedev.buses.entidades.Bus;
+import com.krakedev.buses.entidades.Ruta;
+import com.krakedev.buses.excepciones.KrakeDevException;
+
+@Path("buses")
+public class ServicioBuses {
+
+    @GET
+    @Path("listar")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response listarBuses() {
+        BusesBDD busesBDD = new BusesBDD();
+        ArrayList<Bus> listaBuses;
+        try {
+            listaBuses = busesBDD.obtenerTodos();
+            return Response.ok(listaBuses).build();
+        } catch (KrakeDevException e) {
+            e.printStackTrace();
+            return Response.serverError().entity(e.getMessage()).build();
+        }
+    }
+
+    @POST
+    @Path("agregar")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response agregarBus(Bus bus) {
+        BusesBDD busesBDD = new BusesBDD();
+        try {
+            busesBDD.insertar(bus);
+            return Response.ok().build();
+        } catch (KrakeDevException e) {
+            e.printStackTrace();
+            return Response.serverError().entity(e.getMessage()).build();
+        }
+    }
+}
+
+@Path("rutas")
+public class ServicioRutas {
+
+    @GET
+    @Path("listar")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response listarRutas() {
+        RutasBDD rutasBDD = new RutasBDD();
+        ArrayList<Ruta> listaRutas;
+        try {
+            listaRutas = rutasBDD.obtenerTodas();
+            return Response.ok(listaRutas).build();
+        } catch (KrakeDevException e) {
+            e.printStackTrace();
+            return Response.serverError().entity(e.getMessage()).build();
+        }
+    }
+
+    @POST
+    @Path("agregar")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response agregarRuta(Ruta ruta) {
+        RutasBDD rutasBDD = new RutasBDD();
+        try {
+            rutasBDD.insertar(ruta);
+            return Response.ok().build();
+        } catch (KrakeDevException e) {
+            e.printStackTrace();
+            return Response.serverError().entity(e.getMessage()).build();
+        }
+    }
+}
+
+package com.krakedev.buses.bdd;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import com.krakedev.buses.entidades.Bus;
+import com.krakedev.buses.excepciones.KrakeDevException;
+import com.krakedev.utils.ConexionBDD;
+
+public class BusesBDD {
+    public ArrayList<Bus> obtenerTodos() throws KrakeDevException {
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        ArrayList<Bus> listaBuses = new ArrayList<>();
+        try {
+            con = ConexionBDD.obtenerConexion();
+            ps = con.prepareStatement("select * from buses");
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Bus bus = new Bus(rs.getInt("id_bus"), rs.getString("numero_bus"), rs.getInt("capacidad"));
+                listaBuses.add(bus);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new KrakeDevException("Error al obtener los buses: " + e.getMessage(), e);
+        } finally {
+            ConexionBDD.cerrarConexion(con);
+        }
+        return listaBuses;
+    }
+
+    public void insertar(Bus bus) throws KrakeDevException {
+        Connection con = null;
+        PreparedStatement ps = null;
+        try {
+            con = ConexionBDD.obtenerConexion();
+            ps = con.prepareStatement("insert into buses (numero_bus, capacidad) values (?, ?)");
+            ps.setString(1, bus.getNumeroBus());
+            ps.setInt(2, bus.getCapacidad());
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new KrakeDevException("Error al insertar el bus: " + e.getMessage(), e);
+        } finally {
+            ConexionBDD.cerrarConexion(con);
+        }
+    }
+}
+
+package com.krakedev.buses.bdd;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import com.krakedev.buses.entidades.Ruta;
+import com.krakedev.buses.excepciones.KrakeDevException;
+import com.krakedev.utils.ConexionBDD;
+
+public class RutasBDD {
+    public ArrayList<Ruta> obtenerTodas() throws KrakeDevException {
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        ArrayList<Ruta> listaRutas = new ArrayList<>();
+        try {
+            con = ConexionBDD.obtenerConexion();
+            ps = con.prepareStatement("select * from rutas");
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Ruta ruta = new Ruta(rs.getInt("id_ruta"), rs.getString("ciudad_origen"), rs.getString("ciudad_destino"), rs.getTime("horario_salida"), rs.getTime("horario_llegada"));
+                listaRutas.add(ruta);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new KrakeDevException("Error al obtener las rutas: " + e.getMessage(), e);
+        } finally {
+            ConexionBDD.cerrarConexion(con);
+        }
+        return listaRutas;
+    }
+
+    public void insertar(Ruta ruta) throws KrakeDevException {
+        Connection con = null;
+        PreparedStatement ps = null;
+        try {
+            con = ConexionBDD.obtenerConexion();
+            ps = con.prepareStatement("insert into rutas (ciudad_origen, ciudad_destino, horario_salida, horario_llegada) values (?, ?, ?, ?)");
+            ps.setString(1, ruta.getCiudadOrigen());
+            ps.setString(2, ruta.getCiudadDestino());
+            ps.setTime(3, ruta.getHorarioSalida());
+            ps.setTime(4, ruta.getHorarioLlegada());
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new KrakeDevException("Error al insertar la ruta: " + e.getMessage(), e);
+        } finally {
+            ConexionBDD.cerrarConexion(con);
+        }
+    }
+}
+//////////
+{
+  "numeroBus": "BUS123",
+  "capacidad": 45
+}
+
+{
+  "ciudadOrigen": "Quito",
+  "ciudadDestino": "Guayaquil",
+  "horarioSalida": "08:00:00",
+  "horarioLlegada": "14:00:00"
+}
+
+{
+  "nombre": "Juan Perez",
+  "correoElectronico": "juan.perez@example.com"
+}
+
+{
+  "idUsuario": 1,
+  "idRuta": 5,
+  "cantidadAsientos": 3
+}
+

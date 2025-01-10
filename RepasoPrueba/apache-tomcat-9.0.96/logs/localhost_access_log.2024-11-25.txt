@@ -1,0 +1,11 @@
+127.0.0.1 - - [25/Nov/2024:22:18:00 -0500] "POST /inventarios/rest/ventas/registrar HTTP/1.1" 500 4267
+127.0.0.1 - - [25/Nov/2024:22:23:11 -0500] "GET /inventarios/rest/productos/buscar/a HTTP/1.1" 200 1261
+127.0.0.1 - - [25/Nov/2024:22:23:16 -0500] "POST /inventarios/rest/ventas/registrar HTTP/1.1" 500 4267
+127.0.0.1 - - [25/Nov/2024:22:24:04 -0500] "POST /inventarios/rest/ventas/registrar HTTP/1.1" 500 4267
+127.0.0.1 - - [25/Nov/2024:22:28:43 -0500] "POST /inventarios/rest/ventas/registrar HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2024:23:32:43 -0500] "PUT /inventarios/rest/ventas/actualizar/2 HTTP/1.1" 500 34
+127.0.0.1 - - [25/Nov/2024:23:33:51 -0500] "POST /inventarios/rest/ventas/registrarMovimientoStock/2 HTTP/1.1" 200 44
+127.0.0.1 - - [25/Nov/2024:23:34:08 -0500] "PUT /inventarios/rest/ventas/actualizar/2 HTTP/1.1" 500 34
+127.0.0.1 - - [25/Nov/2024:23:34:17 -0500] "PUT /inventarios/rest/ventas/actualizar/5 HTTP/1.1" 500 34
+127.0.0.1 - - [25/Nov/2024:23:34:24 -0500] "PUT /inventarios/rest/ventas/actualizar/4 HTTP/1.1" 500 34
+127.0.0.1 - - [25/Nov/2024:23:39:38 -0500] "PUT /inventarios/rest/ventas/actualizar/4 HTTP/1.1" 500 34

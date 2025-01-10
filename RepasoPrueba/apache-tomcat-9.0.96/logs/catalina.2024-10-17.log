@@ -1,0 +1,191 @@
+17-Oct-2024 13:04:44.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+17-Oct-2024 13:04:44.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+17-Oct-2024 13:04:44.800 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+17-Oct-2024 13:04:44.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+17-Oct-2024 13:04:44.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+17-Oct-2024 13:04:44.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+17-Oct-2024 13:04:44.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+17-Oct-2024 13:04:44.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+17-Oct-2024 13:04:44.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+17-Oct-2024 13:04:44.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 13:04:44.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 13:04:44.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Oct-2024 13:04:44.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+17-Oct-2024 13:04:44.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+17-Oct-2024 13:04:44.842 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Oct-2024 13:04:44.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Oct-2024 13:04:44.849 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\conf\logging.properties
+17-Oct-2024 13:04:44.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Oct-2024 13:04:44.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+17-Oct-2024 13:04:44.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Oct-2024 13:04:44.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+17-Oct-2024 13:04:44.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 13:04:44.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 13:04:44.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\temp
+17-Oct-2024 13:04:44.887 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+17-Oct-2024 13:04:44.889 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+17-Oct-2024 13:04:44.891 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+17-Oct-2024 13:04:44.914 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+17-Oct-2024 13:04:46.705 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+17-Oct-2024 13:04:46.813 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [3241] milliseconds
+17-Oct-2024 13:04:46.988 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+17-Oct-2024 13:04:46.989 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+17-Oct-2024 13:04:47.052 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+17-Oct-2024 13:04:48.496 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [1.437] ms
+17-Oct-2024 13:04:48.542 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+17-Oct-2024 13:04:48.934 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\docs] has finished in [392] ms
+17-Oct-2024 13:04:48.939 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+17-Oct-2024 13:04:52.202 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\examples] has finished in [3.263] ms
+17-Oct-2024 13:04:52.204 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+17-Oct-2024 13:04:52.497 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\host-manager] has finished in [293] ms
+17-Oct-2024 13:04:52.505 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+17-Oct-2024 13:04:53.083 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\manager] has finished in [578] ms
+17-Oct-2024 13:04:53.086 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+17-Oct-2024 13:04:53.194 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ROOT] has finished in [107] ms
+17-Oct-2024 13:04:53.208 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Oct-2024 13:04:53.291 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [6470] milliseconds
+17-Oct-2024 22:32:21.918 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+17-Oct-2024 22:32:21.932 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+17-Oct-2024 22:32:21.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+17-Oct-2024 22:32:21.936 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+17-Oct-2024 22:32:21.937 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+17-Oct-2024 22:32:21.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+17-Oct-2024 22:32:21.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+17-Oct-2024 22:32:21.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+17-Oct-2024 22:32:21.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+17-Oct-2024 22:32:21.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 22:32:21.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 22:32:21.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Oct-2024 22:32:21.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+17-Oct-2024 22:32:21.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+17-Oct-2024 22:32:21.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Oct-2024 22:32:21.971 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Oct-2024 22:32:21.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\conf\logging.properties
+17-Oct-2024 22:32:21.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Oct-2024 22:32:21.979 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+17-Oct-2024 22:32:21.982 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Oct-2024 22:32:21.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+17-Oct-2024 22:32:21.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 22:32:21.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 22:32:21.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\temp
+17-Oct-2024 22:32:22.011 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+17-Oct-2024 22:32:22.013 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+17-Oct-2024 22:32:22.015 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+17-Oct-2024 22:32:22.058 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+17-Oct-2024 22:32:23.980 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+17-Oct-2024 22:32:24.118 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [3231] milliseconds
+17-Oct-2024 22:32:24.292 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+17-Oct-2024 22:32:24.298 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+17-Oct-2024 22:32:24.363 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+17-Oct-2024 22:32:24.440 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ejemploweb] was found with a last modified time that did not match the associated WAR. It will be deleted.
+17-Oct-2024 22:32:25.716 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [1.347] ms
+17-Oct-2024 22:32:25.758 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+17-Oct-2024 22:32:26.090 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\docs] has finished in [332] ms
+17-Oct-2024 22:32:26.097 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+17-Oct-2024 22:32:29.247 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\examples] has finished in [3.150] ms
+17-Oct-2024 22:32:29.253 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+17-Oct-2024 22:32:29.450 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\host-manager] has finished in [197] ms
+17-Oct-2024 22:32:29.496 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+17-Oct-2024 22:32:29.698 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\manager] has finished in [201] ms
+17-Oct-2024 22:32:29.703 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+17-Oct-2024 22:32:29.846 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ROOT] has finished in [143] ms
+17-Oct-2024 22:32:29.883 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Oct-2024 22:32:30.259 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [6134] milliseconds
+17-Oct-2024 23:29:19.844 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+17-Oct-2024 23:29:19.873 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+17-Oct-2024 23:29:19.875 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+17-Oct-2024 23:29:19.876 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+17-Oct-2024 23:29:19.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+17-Oct-2024 23:29:19.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+17-Oct-2024 23:29:19.889 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+17-Oct-2024 23:29:19.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+17-Oct-2024 23:29:19.903 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+17-Oct-2024 23:29:19.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 23:29:19.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 23:29:19.918 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Oct-2024 23:29:19.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+17-Oct-2024 23:29:19.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+17-Oct-2024 23:29:19.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Oct-2024 23:29:19.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Oct-2024 23:29:19.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\conf\logging.properties
+17-Oct-2024 23:29:19.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Oct-2024 23:29:19.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+17-Oct-2024 23:29:19.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Oct-2024 23:29:19.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+17-Oct-2024 23:29:19.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 23:29:19.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 23:29:19.999 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\temp
+17-Oct-2024 23:29:20.020 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+17-Oct-2024 23:29:20.024 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+17-Oct-2024 23:29:20.033 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+17-Oct-2024 23:29:20.065 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+17-Oct-2024 23:29:23.773 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+17-Oct-2024 23:29:24.074 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [5415] milliseconds
+17-Oct-2024 23:29:24.337 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+17-Oct-2024 23:29:24.340 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+17-Oct-2024 23:29:24.413 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+17-Oct-2024 23:29:24.520 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ejemploweb] was found with a last modified time that did not match the associated WAR. It will be deleted.
+17-Oct-2024 23:29:29.020 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [134] milliseconds.
+17-Oct-2024 23:29:29.751 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [5.338] ms
+17-Oct-2024 23:29:29.907 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+17-Oct-2024 23:29:30.898 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\docs] has finished in [990] ms
+17-Oct-2024 23:29:30.968 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+17-Oct-2024 23:29:37.972 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\examples] has finished in [7.004] ms
+17-Oct-2024 23:29:37.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+17-Oct-2024 23:29:38.194 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\host-manager] has finished in [211] ms
+17-Oct-2024 23:29:38.196 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+17-Oct-2024 23:29:38.391 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\manager] has finished in [194] ms
+17-Oct-2024 23:29:38.392 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+17-Oct-2024 23:29:38.558 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ROOT] has finished in [166] ms
+17-Oct-2024 23:29:38.588 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Oct-2024 23:29:38.756 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [14668] milliseconds
+17-Oct-2024 23:38:20.134 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+17-Oct-2024 23:38:20.155 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+17-Oct-2024 23:38:20.163 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+17-Oct-2024 23:38:20.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+17-Oct-2024 23:38:20.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+17-Oct-2024 23:38:20.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+17-Oct-2024 23:38:20.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+17-Oct-2024 23:38:20.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+17-Oct-2024 23:38:20.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+17-Oct-2024 23:38:20.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 23:38:20.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 23:38:20.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Oct-2024 23:38:20.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+17-Oct-2024 23:38:20.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+17-Oct-2024 23:38:20.225 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Oct-2024 23:38:20.231 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Oct-2024 23:38:20.234 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\conf\logging.properties
+17-Oct-2024 23:38:20.261 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Oct-2024 23:38:20.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+17-Oct-2024 23:38:20.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Oct-2024 23:38:20.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+17-Oct-2024 23:38:20.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 23:38:20.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96
+17-Oct-2024 23:38:20.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\temp
+17-Oct-2024 23:38:20.331 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+17-Oct-2024 23:38:20.346 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+17-Oct-2024 23:38:20.349 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+17-Oct-2024 23:38:20.380 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+17-Oct-2024 23:38:22.920 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+17-Oct-2024 23:38:23.333 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [4343] milliseconds
+17-Oct-2024 23:38:23.735 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+17-Oct-2024 23:38:23.752 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+17-Oct-2024 23:38:23.816 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+17-Oct-2024 23:38:26.795 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [2.958] ms
+17-Oct-2024 23:38:26.848 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+17-Oct-2024 23:38:27.317 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\docs] has finished in [468] ms
+17-Oct-2024 23:38:27.322 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+17-Oct-2024 23:38:31.464 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\examples] has finished in [4.140] ms
+17-Oct-2024 23:38:31.466 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+17-Oct-2024 23:38:31.785 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\host-manager] has finished in [318] ms
+17-Oct-2024 23:38:31.788 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+17-Oct-2024 23:38:32.526 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\manager] has finished in [737] ms
+17-Oct-2024 23:38:32.539 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+17-Oct-2024 23:38:32.726 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\USER\Desktop\PROGRAMACIONBRYAN\Modulo2\apache-tomcat-9.0.96-windows-x64\apache-tomcat-9.0.96\webapps\ROOT] has finished in [187] ms
+17-Oct-2024 23:38:32.766 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Oct-2024 23:38:32.887 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [9425] milliseconds
